@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>Lego Collection</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100">
+        <div class="flex-none">
+            <a href="/" class="text-2xl text-white font-bold">Lego Collection</a>
+            <ul class="flex space-x-4">
+                <li class="relative group">
+                    <a href="/views/about.html" class="btn btn-ghost btn-circle">About</a>
+                    <button class="btn btn-ghost btn-circle">Theme</button>
+                    <details class="dropdown">
+                        <summary class="m-1 btn">Our Themes</summary>
+                        <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                            <li><a href="/lego/sets?theme=Theme1">Theme1</a></li>
+                            <li><a href="/lego/sets?theme=Theme2">Theme2</a></li>
+                            <li><a href="/lego/sets?theme=Theme3">Theme3</a></li>
+                        </ul>
+                    </details>
+                    <ul class="hidden absolute z-10 space-y-2 p-2 bg-white group-hover:block"></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mx-auto">
+        <!-- Hero Section -->
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Hello there</h1>
+                    <p class="py-6">Take a look at the Lego sets we have.</p>
+                    <a href="/lego/sets" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-60 h-60"
+                        src="https://cdn.rebrickable.com/media/thumbs/sets/001-1/11530.jpg/1000x800p.jpg?1657531528.3084338"
+                        alt="gears" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Gears</h2>
+                    <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969
+                        as an educational set (322-4). It was never released in Europe.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">
+                            <a href="/lego/sets/001-1">Buy Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-60 h-60"
+                        src="https://cdn.rebrickable.com/media/thumbs/sets/0011-2/3318.jpg/1000x800p.jpg?1657700399.9905567"
+                        alt="mini figers" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">mini figuers</h2>
+                    <p>There are 3 Minifigs in this inventory, with 3 total quantity</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary"> <a href="/lego/sets/0011-2">Buy Now</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                    <img class="w-60 h-60" src="https://cdn.rebrickable.com/media/thumbs/sets/0012-1/1831.jpg/1000x800p.jpg?1657552787.9906573" alt="space figuers" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">space figuers</h2>
+                    <p>There are 1 Minifigs in this inventory, with 2 total quantity.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary"> <a href="/lego/sets/0012-1">Buy Now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
