@@ -21,6 +21,11 @@ require('dotenv').config();
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
+
+express.urlencoded({extended:true})
+//const multer = require('multer');
+
+
 app.get("/", (req, res) => {
   res.render("home");
 });
