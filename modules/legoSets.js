@@ -12,8 +12,10 @@
 // const setData = require("../data/setData");
 // const themeData = require("../data/themeData");
 //require('dotenv').config();
-const env = require("dotenv")
+
+const env = require('dotenv')
 env.config()
+
 const Sequelize = require('sequelize');
 
 
