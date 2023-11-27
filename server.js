@@ -18,7 +18,6 @@ app.set('view engine', 'ejs');
 const HTTP_PORT = process.env.PORT || 8080;
 const legoData = require("./modules/legoSets");
 require('dotenv').config();
-
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
