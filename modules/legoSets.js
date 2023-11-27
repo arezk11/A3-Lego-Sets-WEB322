@@ -15,6 +15,7 @@
 const env = require("dotenv")
 env.config()
 const Sequelize = require('sequelize');
+require('dotenv').config();
 // let sets = [];
 
 let sequelize = new Sequelize(process.env.PGDATABASE, process.env.PGUSER, process.env.PGPASSWORD, {
